@@ -1,0 +1,175 @@
+{
+  "todoList": [
+    {
+      "title": "pages \"About\" and \"Careers\"",
+      "description": "All the details are in the file, I'm sure it will turn out cool!",
+      "categories": [
+        "Website",
+        "Design"
+      ],
+      "responsible": [
+        {
+          "name": "Dr. Jonathon Bartell",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/164.jpg",
+          "position": "Designer"
+        },
+        {
+          "name": "Velma Walsh",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/145.jpg",
+          "position": "Full stack"
+        }
+      ]
+    },
+    {
+      "title": "Planning meeting for the second version of the app",
+      "categories": [
+        "App",
+        "Planning"
+      ],
+      "responsible": [
+        {
+          "name": "Eloise Haley",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/174.jpg",
+          "position": "Project manager"
+        }
+      ]
+    },
+    {
+      "title": "Second design concept",
+      "description": "Let's do the extract opposite of the first concept. Light theme, minimalism and lightness",
+      "categories": [
+        "Website",
+        "Design"
+      ],
+      "responsible": [
+        {
+          "name": "Claude Hand",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/54.jpg",
+          "position": "Frontend"
+        },
+        {
+          "name": "Essie Littel",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/23.jpg",
+          "position": "Designer"
+        }
+      ]
+    },
+    {
+      "title": "Presentation",
+      "description": "Approved the design of the iOS app, let's make a presentation",
+      "categories": [
+        "Project manager",
+        "Design"
+      ],
+      "responsible": [
+        {
+          "name": "Vernon Schowalter",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/416.jpg",
+          "position": "Frontend"
+        },
+        {
+          "name": "Katrina Bashirian",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/932.jpg",
+          "position": "Designer"
+        }
+      ]
+    },
+    {
+      "title": "Secret Marketing Page",
+      "description": "We need to make a page for a special offer for the most loyal customers",
+      "categories": [
+        "Website",
+        "Design"
+      ],
+      "responsible": [
+        {
+          "name": "Miss Mona Donnelly V",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/809.jpg",
+          "position": "Product manager"
+        },
+        {
+          "name": "Carl Effertz Sr.",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/449.jpg",
+          "position": "Designer"
+        }
+      ]
+    },
+    {
+      "title": "Landing page revision",
+      "categories": [
+        "Design"
+      ],
+      "responsible": [
+        {
+          "name": "Irene Frami",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1154.jpg",
+          "position": "Product manager"
+        },
+        {
+          "name": "Rudolph Brown",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/930.jpg",
+          "position": "Designer"
+        }
+      ]
+    },
+    {
+      "title": "Modal error",
+      "description": "Error on close modal window",
+      "categories": [
+        "Frontend"
+      ],
+      "responsible": [
+        {
+          "name": "Eva Dibbert",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1241.jpg",
+          "position": "Frontend"
+        },
+        {
+          "name": "Leland Heathcote",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/351.jpg",
+          "position": "Backend"
+        }
+      ]
+    },
+    {
+      "title": "Home page bugs fixes",
+      "description": "I found several mistakes. Made a list, attached it below",
+      "categories": [
+        "Website",
+        "Frontend"
+      ],
+      "responsible": [
+        {
+          "name": "Archie Spencer",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/710.jpg",
+          "position": "Product manager"
+        },
+        {
+          "name": "Tina Bauch",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/372.jpg",
+          "position": "Frontend"
+        }
+      ]
+    },
+    {
+      "title": "First design concept",
+      "description": "Let's try a dark theme and bright colors for accents.",
+      "categories": [
+        "Design",
+        "Frontend"
+      ],
+      "responsible": [
+        {
+          "name": "Kristy Williamson",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/854.jpg",
+          "position": "Designer"
+        },
+        {
+          "name": "Ms. Willis Veum",
+          "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/378.jpg",
+          "position": "Frontend"
+        }
+      ]
+    }
+  ]
+}

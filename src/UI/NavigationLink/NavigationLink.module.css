@@ -1,0 +1,18 @@
+.menuItem {
+    padding: 15px 50px;
+    font-size: 0;
+    color: #9996A5;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: all .2s ease 0s;
+}
+
+.textVisible{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.menuItem span:before {
+    font-size: 32px;
+}

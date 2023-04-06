@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bfbc1475-1cb6-4109-a49e-90c9f24c60a7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+        <option value="HTML File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2NhJ2qmXiN8Okf26KzsMVFrJpTS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/web/projects/youtrack/src/image",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\standard",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Admin\\Desktop\\web\\projects\\youtrack\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "C:\\Users\\Admin\\Desktop\\web\\projects\\youtrack\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\image" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\icons" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\components\AccountMenu" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\icons-font" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\styles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\image" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\UI\WelcomeUser" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\styles" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\icons-font" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\node_modules" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bfbc1475-1cb6-4109-a49e-90c9f24c60a7" name="Changes" comment="" />
+      <created>1680110176149</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680110176149</updated>
+      <workItem from="1680110177436" duration="1928000" />
+      <workItem from="1680160221005" duration="6579000" />
+      <workItem from="1680182248414" duration="474000" />
+      <workItem from="1680182737301" duration="687000" />
+      <workItem from="1680189190021" duration="4007000" />
+      <workItem from="1680252518431" duration="24660000" />
+      <workItem from="1680416359075" duration="20751000" />
+      <workItem from="1680456099502" duration="2617000" />
+      <workItem from="1680497694309" duration="24678000" />
+      <workItem from="1680586219112" duration="27883000" />
+      <workItem from="1680674008922" duration="17379000" />
+      <workItem from="1680770348455" duration="2000" />
+      <workItem from="1680772936552" duration="24602000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+.menuContainer {
+    border-right: 2px solid rgb(52, 50, 64);
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+}
+
+
+
