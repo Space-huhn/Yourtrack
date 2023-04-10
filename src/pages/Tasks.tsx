@@ -4,55 +4,83 @@ import {ITask} from "../interfaces";
 import styles from './Tasks.module.css';
 import './categories.css'
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import {statusTypes} from "../static/static-data";
+import TaskCard from "../UI/TaskCard/TaskCard";
+import CardsContainer from "../UI/CardsContainer/CardsContainer";
+import CreateTask from "../components/CreateTask/CreateTask";
+import CreateTaskButton from "../UI/CreateTaskButton/CreateTaskButton";
 
 const Tasks = () => {
   const [data, setData] = useState<ITask[]>( []);
+  const [modalVisible, setModalVisible] = useState(false)
+
+
   const [searchValue, setSearchValue] = useState<string>("")
 
   useEffect(() => {
     fetchData(`http://localhost:3004/todoList`, setData).then()
   }, [])
 
+  const clickHandler = (event, element, status) => {
+    const target = event.target as HTMLDivElement;
+    if (target.closest(".cardsContainer")) {
+      console.log("ok")
+    }
+    setData([...data, element.status = status])
+  }
+
+  const changeStatus = (event, element, status) => {
+    const target = event.target as HTMLDivElement;
+    if (target.closest(".cardsContainer")) {
+      console.log("ok")
+    }
+    setData([...data, element.status = status])
+  }
+
+
   return (
     <div className={styles.pageContent}>
       <Header setSearchValue={setSearchValue}/>
+
       <div className={styles.main}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, at.
+        <CreateTaskButton setModalVisible={setModalVisible}/>
+        <CreateTask modalVisible={modalVisible} setModalVisible={setModalVisible}/>
+
+        <div className={styles.cardsWrapper}>
+          {
+            statusTypes.map(element => {
+              return (
+                <CardsContainer key={element.status} object={element}>
+
+                  <div key={element.status} className={element.status}>{
+                    data.map(object => {
+                      if (object.status === element.status) {
+                        return <TaskCard key={object.id} clickHandler={clickHandler} changeStatus={changeStatus} object={object}/>
+                      }
+                    })
+                  }</div>
+
+                </CardsContainer>
+              )
+            })
+          }
+        </div>
+
+
+
+        {/*<TaskCard object={data[0]}/>*/}
+        {/*<TaskCard object={data[1]}/>*/}
+        {/*<TaskCard object={data[2]}/>*/}
+        {/*<TaskCard object={data[3]}/>*/}
+
+
+
+
       </div>
-      <div className={styles.footer}>Lorem ipsum dolor sit amet.</div>
 
+      <Footer/>
 
-      {/*
-      <div className={styles.card}>
-        <div className={styles.categories}>{
-          data[0]?.categories.map(element => {
-            return <span className={element} key={element}>{element}</span>
-          })
-        }</div>
-        <h2 className={styles.title}>{data[0]?.title}</h2>
-        <p className={styles.text}>{data[0]?.description}</p>
-        <hr className={styles.line}/>
-        <div className={styles.responsible}>{
-          data[0]?.responsible.map((element, index)=> {
-            return (
-
-              <div key={index} className={styles.window}>
-
-                <img style={{width: '50px', borderRadius: '50px'}} src={element.avatar} alt="Alt"/>
-
-                <div className={styles.info}>
-                  <h3>{element.name}</h3>
-                  <p>{element.position}</p>
-                </div>
-
-              </div>
-
-            )
-          })
-        }</div>
-
-      </div>
-*/}
     </div>
   );
 };

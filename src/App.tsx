@@ -1,10 +1,10 @@
-import React, {useContext, useState} from 'react';
+import React, {useState} from 'react';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Menu from "./components/Menu/Menu";
 import Tasks from "./pages/Tasks";
 import Notifications from "./pages/Notifications";
 import './styles/wrapper-styles.css';
-import {Auth, IAuth} from './context/isAuth';
+import {Auth} from './context/isAuth';
 import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
 

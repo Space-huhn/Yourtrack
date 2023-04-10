@@ -1,6 +1,6 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import styles from './LoginUser.module.css'
-import {Auth, IAuth} from "../../context/isAuth";
+import {Auth} from "../../context/isAuth";
 import {useNavigate} from "react-router-dom";
 import Input from "../Input/Input";
 
@@ -15,16 +15,20 @@ const LoginUser = () => {
     goToLogin("/");
   }
 
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+  }
+
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Login</h2>
       <hr className={styles.line}/>
-      <form action="#" className={styles.form}>
-
+      <form onSubmit={handleSubmit}
+        action="#"
+        className={styles.form}>
         <Input type="text" sting={"Username"}/>
         <Input type="password" sting={"Password"}/>
-
-        <button onClick={buttonHandler}>Login</button>
+        <button type="submit" onClick={buttonHandler}>Login</button>
       </form>
     </div>
   );

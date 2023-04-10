@@ -40,7 +40,7 @@ const AccountMenu = () => {
       <img className={styles.image} src={avatar} alt="ALT" onClick={handleClick}/>
       <nav className={cl.join(" ")}>
         {accountMenuItems.map(element => {
-          return <p className={styles.navigationItem}>{element}</p>
+          return <p key={element} className={styles.navigationItem}>{element}</p>
         })}
         <p className={styles.navigationItem}
           onClick={logOut}

@@ -1,0 +1,25 @@
+.footer {
+    flex: 0 0 45px;
+    display: flex;
+    align-items: center;
+    color: #9996A5;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.link {
+    text-transform: capitalize;
+    display: inline-block;
+    margin-right: 15px;
+    color: #9996A5;
+    transition: color .3s ease 0s;
+}
+
+.link:hover {
+    color: #EC3267;
+}
+
+
+

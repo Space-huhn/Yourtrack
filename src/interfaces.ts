@@ -15,9 +15,11 @@ interface IResponsible {
 }
 
 export interface ITask {
+  id: number;
   title: string;
   description: string;
   categories: string[];
+  status: string;
   responsible: IResponsible[]
 }
 

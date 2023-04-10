@@ -1,0 +1,14 @@
+.container {
+    width: 250px;
+    height: 40px;
+    border: 2px dashed #9996A5;
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container svg {
+    fill: #EC3A86;
+}

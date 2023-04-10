@@ -3,6 +3,11 @@ export interface IMenuItems {
   path: string;
 }
 
+export interface ICardsTypes {
+  name: string;
+  status: string;
+}
+
 export const menuItems:IMenuItems[] = [
   {
     name: "tasks",
@@ -15,3 +20,23 @@ export const menuItems:IMenuItems[] = [
 ]
 
 export const accountMenuItems: string[] = ["my profile", "help", "settings", "info"]
+
+
+export const statusTypes: ICardsTypes[] = [
+  {
+    name: "To Do",
+    status: "toDo",
+  },
+  {
+    name: "In Progress",
+    status: "inProgress",
+  },
+  {
+    name: "Completed",
+    status: "completed",
+  },
+]
+
+
+
+

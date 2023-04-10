@@ -1,12 +1,13 @@
-// import { faker } from '@faker-js/faker';
 const { faker } = require('@faker-js/faker');
 
 function generatePlaceholder() {
   const todoList =  [
   {
+    id: 0,
     title: "Pages \"About\" and \"Careers\"",
     description: "All the details are in the file, I'm sure it will turn out cool!",
     categories: ["website", "design"],
+    status: "inProgress",
     responsible: [
       {
         name: faker.name.fullName(),
@@ -21,8 +22,10 @@ function generatePlaceholder() {
     ]
   },
   {
+    id: 1,
     title: "planning meeting for the second version of the app",
     categories: ["app", "planning"],
+    status: "toDo",
     responsible: [
       {
         name: faker.name.fullName(),
@@ -32,9 +35,11 @@ function generatePlaceholder() {
     ]
   },
   {
+    id: 2,
     title: "Second design concept",
     description: "Let's do the extract opposite of the first concept. Light theme, minimalism and lightness",
     categories: ["website", "design"],
+    status: "toDo",
     responsible: [
       {
         name: faker.name.fullName(),
@@ -49,9 +54,11 @@ function generatePlaceholder() {
     ]
   },
   {
+    id: 3,
     title: "Presentation",
     description: "approved the design of the iOS app, let's make a presentation",
-    categories: ["project management", "design"],
+    categories: ["management", "design"],
+    status: "completed",
     responsible: [
       {
         name: faker.name.fullName(),
@@ -66,9 +73,11 @@ function generatePlaceholder() {
     ]
   },
   {
+    id: 4,
     title: "Secret Marketing Page",
     description: "We need to make a page for a special offer for the most loyal customers",
     categories: ["website", "design"],
+    status: "inProgress",
     responsible: [
       {
         name: faker.name.fullName(),
@@ -83,8 +92,10 @@ function generatePlaceholder() {
     ]
   },
   {
+    id: 5,
     title: "Landing page revision",
     categories: ["design"],
+    status: "toDo",
     responsible: [
       {
         name: faker.name.fullName(),
@@ -99,9 +110,11 @@ function generatePlaceholder() {
     ]
   },
   {
+    id: 6,
     title: "Modal error",
     description: "Error on close modal window",
     categories: ["frontend"],
+    status: "inProgress",
     responsible: [
       {
         name: faker.name.fullName(),
@@ -116,9 +129,11 @@ function generatePlaceholder() {
     ]
   },
   {
+    id: 7,
     title: "Home page bugs fixes",
     description: "I found several mistakes. Made a list, attached it below",
     categories: ["website", "frontend"],
+    status: "toDo",
     responsible: [
       {
         name: faker.name.fullName(),
@@ -133,9 +148,11 @@ function generatePlaceholder() {
     ]
   },
   {
+    id: 8,
     title: "First design concept",
     description: "Let's try a dark theme and bright colors for accents.",
     categories: ["design", "frontend"],
+    status: "inProgress",
     responsible: [
       {
         name: faker.name.fullName(),
