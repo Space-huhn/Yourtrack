@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './CardCategories.module.css';
 
-const CardCategories = ({object}) => {
+const CardCategories = ({array}) => {
   return (
     <div className={styles.categories}>{
-      object.categories.map(element => {
+      array.map(element => {
         return <span className={element} key={element}>{element}</span>
       })
     }</div>

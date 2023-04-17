@@ -10,7 +10,15 @@ import Login from "./pages/Login";
 
 function App() {
 
-const [isAuth, setIsAuth] = useState<boolean>(false)
+  const getIsAuth = () => {
+    const state = Boolean(localStorage.getItem("userIsAuthentication"))
+    if (state) {
+      return state;
+    }
+    return false;
+  }
+  getIsAuth()
+  const [isAuth, setIsAuth] = useState<boolean>(getIsAuth())
 
   return (
     <BrowserRouter>

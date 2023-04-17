@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
-    top: -100%;
+    top: -150%;
     left: 0;
     background: rgba(0, 0, 0, .5);
     z-index: 10;
@@ -21,14 +21,58 @@
 .content {
     padding: 15px 25px;
     background: #FFF;
+    border-radius: 7px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+
+.content label, textarea {
+    display: block;
+
+}
+
+.content label {
+    text-transform: capitalize;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content input {
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
+    display: inline-block;
 }
 
-.closeButton {
+.content textarea {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    min-width: 350px;
+    height: 150px;
+    resize: none;
+}
+
+.content select {
+    border-radius: 10px;
+    border: 1px solid #2A2D3A;
+    padding: 5px 10px;
+    text-transform: capitalize ;
+}
+
+.categories {
+    display: inline-block;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.bottom {
     display: flex;
-    padding: 5px;
-    background: transparent;
-    margin: 0 0 0 auto;
-
+    align-items: center;
+    gap: 15px;
+    justify-content: right;
 }
-

@@ -4,12 +4,3 @@
     flex-direction: column;
     padding: 0 30px;
 }
-
-.main {
-    flex: 1 0 auto;
-}
-
-.cardsWrapper{
-    display: flex;
-    gap: 50px;
-}

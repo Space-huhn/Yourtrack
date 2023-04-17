@@ -1,11 +1,33 @@
 .cardsContainer {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-
+    display: flex;
+    gap: 50px;
 }
 
 .title {
     font-size: 18px;
     color: #fff;
     margin-bottom: 25px;
+}
+
+.row {
+    width: 350px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardContainer {
+    opacity: 1;
+    transition: all .2s ease-in-out 0s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardContainer.grabElement {
+    box-shadow: 0 5px 8px rgba(255, 255, 255, 0.2);
+}
+
+.cardContainer.selected {
+    opacity: .3;
 }

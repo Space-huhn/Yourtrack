@@ -1,0 +1,12 @@
+.button {
+    background: #DBE2E9;
+    border: 1px solid #9996A5;
+    border-radius: 8px;
+    padding: 4px 15px;
+    transition: all .6s linear 0s;
+}
+
+.button:hover {
+    background: yellow;
+    border: 1px solid darkred;
+}

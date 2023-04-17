@@ -10,6 +10,7 @@ const AccountMenu = () => {
 
   const logOut = () => {
     setIsAuth(false)
+    localStorage.removeItem("userIsAuthentication")
   }
 
   const handleClick = () => {

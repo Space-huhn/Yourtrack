@@ -1,0 +1,8 @@
+.main {
+    flex: 1 0 auto;
+}
+
+.cardsWrapper{
+    display: flex;
+    gap: 50px;
+}

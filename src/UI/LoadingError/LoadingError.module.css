@@ -1,0 +1,22 @@
+.errorContainer {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.massage {
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 25px;
+}
+
+.title {
+    font-size: 32px;
+    color: #9996A5;
+}
+
+.massage svg {
+    fill: #323A40;
+}

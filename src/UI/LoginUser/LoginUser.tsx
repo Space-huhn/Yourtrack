@@ -11,7 +11,7 @@ const LoginUser = () => {
 
   const buttonHandler = () => {
     setIsAuth(true)
-
+    localStorage.setItem("userIsAuthentication", "true")
     goToLogin("/");
   }
 

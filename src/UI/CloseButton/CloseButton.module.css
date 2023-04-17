@@ -1,0 +1,6 @@
+.closeButton {
+    display: flex;
+    padding: 5px;
+    background: transparent;
+    margin: 0 0 0 auto;
+}

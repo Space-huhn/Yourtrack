@@ -1,0 +1,12 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+
+.loader svg {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    display:inline-block;
+}

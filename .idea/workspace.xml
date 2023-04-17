@@ -2,33 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfbc1475-1cb6-4109-a49e-90c9f24c60a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UI/CardCategories/CardCategories.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/CardCategories/CardCategories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/CardsContainer/CardsContainer.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/CardsContainer/CardsContainer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/CreateTaskButton/CreateTaskButton.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/CreateTaskButton/CreateTaskButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Responsible/Responsible.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Responsible/Responsible.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/TaskCard/TaskCard.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/TaskCard/TaskCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CreateTask/CreateTask.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CreateTask/CreateTask.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageContent/PageContent.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageContent/PageContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/add.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Button/Button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Button/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Calendar/Calendar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/CloseButton/CloceButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/CloseButton/CloseButton.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Loader/Loader.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Loader/Loader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/LoadingError/LoadingError.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/LoadingError/LoadingError.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TaskPageContent/TaskPageContent.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TaskPageContent/TaskPageContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functions/moveArrayElement.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/error.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json-server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/json-server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CardCategories/CardCategories.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardCategories/CardCategories.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CardCategories/CardCategories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardCategories/CardCategories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CardsContainer/CardsContainer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CardsContainer/CardsContainer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CardsContainer/CardsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CardsContainer/CardsContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CreateTaskButton/CreateTaskButton.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CreateTaskButton/CreateTaskButton.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/LoginUser/LoginUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/LoginUser/LoginUser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/TaskCard/TaskCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/TaskCard/TaskCard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/TaskCard/TaskCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/TaskCard/TaskCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountMenu/AccountMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountMenu/AccountMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateTask/CreateTask.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateTask/CreateTask.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateTask/CreateTask.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateTask/CreateTask.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Tasks.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Tasks.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Tasks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Tasks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/static-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/static-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaskPageContent/categories.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +43,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="HTML File" />
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -61,28 +65,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/web/projects/youtrack/src/icons",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\standard",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Admin\\Desktop\\web\\projects\\youtrack\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "C:\\Users\\Admin\\Desktop\\web\\projects\\youtrack\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/web/projects/youtrack/src/icons&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\standard&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Admin\\Desktop\\web\\projects\\youtrack\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Admin\\Desktop\\web\\projects\\youtrack\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\icons" />
@@ -92,11 +96,11 @@
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\components" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\components\TaskPageContent" />
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\image" />
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\UI\WelcomeUser" />
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\styles" />
-      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\icons-font" />
-      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\node_modules" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -125,7 +129,14 @@
       <workItem from="1680940738930" duration="15847000" />
       <workItem from="1681036925816" duration="8757000" />
       <workItem from="1681107482107" duration="1381000" />
-      <workItem from="1681141488326" duration="9029000" />
+      <workItem from="1681141488326" duration="9093000" />
+      <workItem from="1681193593768" duration="16708000" />
+      <workItem from="1681401654548" duration="3891000" />
+      <workItem from="1681491914578" duration="2214000" />
+      <workItem from="1681543019736" duration="20353000" />
+      <workItem from="1681627521681" duration="15885000" />
+      <workItem from="1681674858149" duration="1725000" />
+      <workItem from="1681715916991" duration="19619000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1680807256007</created>
@@ -141,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680807284970</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="some change">
+      <created>1681153644963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681153644963</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+    <MESSAGE value="some change" />
+    <option name="LAST_COMMIT_MESSAGE" value="some change" />
   </component>
 </project>

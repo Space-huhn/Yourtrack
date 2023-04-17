@@ -1,12 +1,12 @@
 .card {
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
     border: 1px solid rgb(64, 65, 69);
     border-radius: 10px;
     padding: 15px;
     background: #2A2D3A;
-    transition: all .4s ease 0s;
-    margin-top: 20px;
+    transition: all .3s ease 0s;
+    /*margin-top: 20px;*/
 }
 
 .card:hover {
