@@ -9,28 +9,22 @@ import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
 
 function App() {
-
   const getIsAuth = () => {
-    const state = Boolean(localStorage.getItem("userIsAuthentication"))
-    if (state) {
-      return state;
-    }
-    return false;
+    const state: boolean = Boolean(localStorage.getItem("userIsAuthentication"))
+    if (!state) return false;
+
+    return state;
   }
-  getIsAuth()
-  const [isAuth, setIsAuth] = useState<boolean>(getIsAuth())
+
+  const [isAuth, setIsAuth] = useState(getIsAuth())
 
   return (
     <BrowserRouter>
       <div className={"wrapper"}>
         <div className={"container"}>
-          <Auth.Provider value={{
-            isAuth,
-            setIsAuth
-          }}>
+          <Auth.Provider value={{isAuth, setIsAuth}}>
             {
               !isAuth ?
-
                 <Routes>
                   <Route path="/" element={<Welcome/>}/>
                   <Route path="/login" element={<Login/>}/>

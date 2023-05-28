@@ -4,7 +4,7 @@ import '../../styles/iconsfont.css';
 import './active-link.css';
 import {menuItems} from "../../static/static-data";
 import NavigationLink from "../../UI/NavigationLink/NavigationLink";
-import {IMenuItems} from "../../interfaces";
+import {IMenuItems} from "../../types/interfaces";
 import GuideIcon from "../../UI/GuideIcon/GuideIcon";
 
 const Menu = () => {

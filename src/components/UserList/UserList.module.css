@@ -1,0 +1,44 @@
+.label {
+    text-transform: uppercase;
+}
+
+.responsibleContainer {
+
+}
+
+.responsible {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 10px 0 0;
+    background: rgba(42, 45, 58, .5);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.deleteResponsible {
+    background: transparent;
+    opacity: 0.5;
+    transition: all .3s ease-in 0s;
+}
+
+.deleteResponsible svg {
+    height: 25px;
+}
+
+.deleteResponsible:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.name {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.avatar {
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+

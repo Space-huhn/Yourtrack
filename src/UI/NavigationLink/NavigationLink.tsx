@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import styles from "./NavigationLink.module.css";
-import {ILink} from "../../interfaces";
+import {ILink} from "../../types/interfaces";
 
 const NavigationLink = ({guideVisible, object}: ILink) => {
   const cl: string[] = [styles.menuItem];

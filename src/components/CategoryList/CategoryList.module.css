@@ -1,0 +1,47 @@
+.categories {
+    display: inline-block;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.categoriesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.category {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.category > span {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    background: rgba(51, 51, 51, 0.3);
+}
+
+.deleteCategories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    background: transparent;
+    opacity: 0.5;
+    transition: all .3s ease-in 0s;
+}
+
+.deleteCategories svg {
+    height: 25px;
+}
+
+.deleteCategories:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}

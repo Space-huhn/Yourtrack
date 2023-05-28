@@ -1,105 +1,70 @@
-import React, {useState} from 'react';
+import React, {Dispatch, SetStateAction} from 'react';
 import styles from './CardsContainer.module.css'
-import {statusTypes} from "../../static/static-data";
-import TaskCard from "../TaskCard/TaskCard";
-import {ITask} from "../../interfaces";
-import {moveElement} from "../../functions/moveArrayElement";
+import { DragDropContext } from 'react-beautiful-dnd';
+import DragAndDropColumn from "../../components/DragAndDrop/DragAndDropColumn";
+import {ITodoListColumns} from "../../types/interfaces";
+import {putData} from "../../functions/putData";
 
-const CardsContainer = ({data, setData, searchValue}) => {
-  const [currentElement, setCurrentElement] = useState<ITask | null>(null)
+interface ICardsContainer {
+  data: ITodoListColumns,
+  setData: Dispatch<SetStateAction<ITodoListColumns>>,
+  searchValue: string
+}
 
-  const changeStatus = (target) => {
+const CardsContainer:React.FC<ICardsContainer> = ({data, setData, searchValue}) => {
+  const onDragEnd = (result, columns, setColumns) => {
+    if (!result.destination) return;
+    const { source, destination } = result;
 
-    statusTypes.map((statusType) => {
-      if (target.closest(`.${statusType.status}`)) {
-        setData([...data, currentElement!.status = `${statusType.status}`])
+   if (source.droppableId !== destination.droppableId) {
+    const sourceColumn = columns[source.droppableId];
+    const destColumn = columns[destination.droppableId];
+    const sourceItems = [...sourceColumn.items];
+    const destItems = [...destColumn.items];
+    const [removed] = sourceItems.splice(source.index, 1);
+
+    removed.status = destination.droppableId;
+
+    destItems.splice(destination.index, 0, removed);
+
+    setColumns({
+      ...columns,
+      [source.droppableId]: {
+        ...sourceColumn,
+        items: sourceItems
+      },
+      [destination.droppableId]: {
+        ...destColumn,
+        items: destItems
       }
-    })
-  }
+    });
+    } else {
+      const column = columns[source.droppableId];
+      const copiedItems = [...column.items];
+      const [removed] = copiedItems.splice(source.index, 1);
+      copiedItems.splice(destination.index, 0, removed);
 
-  const dragLeaveHandler = (e: React.DragEvent<HTMLDivElement>) => {
-    const target = e.target as HTMLDivElement;
-
-    target?.closest(`.${styles.cardContainer}`)?.classList.remove(styles.grabElement);
-  }
-
-  const dragOverHandler = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-
-    const target = e.target as HTMLDivElement;
-
-    target?.closest(`.${styles.cardContainer}`)?.classList.add(styles.grabElement);
-  }
-
-  const dragStartHandler = (e: React.DragEvent<HTMLDivElement>, item) => {
-    const target = e.target as HTMLDivElement;
-
-    setCurrentElement(item);
-
-    target.closest(`.${styles.cardContainer}`)?.classList.add(styles.selected);
-  }
-
-  const dragEndHandler = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-
-    const target = e.target as HTMLDivElement;
-
-    target.classList.remove(styles.selected);
-  }
-
-  const dropHandler = (e: React.DragEvent<HTMLDivElement>, item?) => {
-    e.preventDefault();
-    const target = e.target as HTMLDivElement;
-
-    const indexOfDragElement = data.indexOf(currentElement);
-
-    if (item) {
-      const indexOfDropElement = data.indexOf(item);
-      setData(moveElement(data, indexOfDragElement, indexOfDropElement, currentElement));
+     setColumns({
+        ...columns,
+        [source.droppableId]: {
+          ...column,
+          items: copiedItems
+        }
+      });
     }
-
-    changeStatus(target)
-
-    target?.closest(`.${styles.cardContainer}`)?.classList.remove(styles.grabElement)
   }
+
+  putData(`http://localhost:3004/todoListColumns`, data).then();
 
   return (
     <div className={styles.cardsContainer}>
-      {
-        statusTypes.map(statusType => {
+      <DragDropContext onDragEnd={(result) => onDragEnd(result, data, setData)}>
+        {Object.keys(data).map((key) => {
           return (
-            <div key={statusType.status}>
-
-              <h2 className={styles.title}>{statusType.name}</h2>
-
-              <div key={statusType.status}
-                   draggable={true}
-                   onDragOver={dragOverHandler}
-                   onDrop={dropHandler}
-                   className={`${statusType.status} ${styles.row}`}
-              >
-                {data.map(object => {
-                  if (object.status === statusType.status && JSON.stringify(object).includes(searchValue)) {
-                    return (
-                      <div key={object.id}
-                           className={styles.cardContainer}
-                           draggable={true}
-                           onDragStart={(e) => dragStartHandler(e, object)}
-                           onDragLeave={dragLeaveHandler}
-                           onDragEnd={dragEndHandler}
-                           onDragOver={dragOverHandler}
-                           onDrop={(e) => dropHandler(e, object)}
-                      >
-                        <TaskCard object={object}/>
-                      </div>
-                    )
-                  }
-                })}
-              </div>
-            </div>
+            <DragAndDropColumn key={key} statusType={key} title={data[key].name} list={data[key].items}/>
           )
-        })
-      }
+        })}
+      </DragDropContext>
     </div>
   );
 };

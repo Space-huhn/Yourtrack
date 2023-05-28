@@ -9,19 +9,18 @@
     margin-bottom: 25px;
 }
 
-.row {
+.row > div {
     width: 350px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    margin-top: 20px;
 }
 
 .cardContainer {
     opacity: 1;
     transition: all .2s ease-in-out 0s;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .cardContainer.grabElement {

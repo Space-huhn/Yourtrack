@@ -2,37 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfbc1475-1cb6-4109-a49e-90c9f24c60a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UI/Button/Button.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Button/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Calendar/Calendar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/CloseButton/CloceButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/CloseButton/CloseButton.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Loader/Loader.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Loader/Loader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/LoadingError/LoadingError.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/LoadingError/LoadingError.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TaskPageContent/TaskPageContent.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TaskPageContent/TaskPageContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/moveArrayElement.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/error.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/InputModal/InputModal.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/InputModal/InputModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Select/Select.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Select/Select.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/SelectResponsible/SelectResponsible.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/SelectResponsible/SelectResponsible.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/TextArea/TextArea.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/TextArea/TextArea.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CategoryList/CategoryList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CategoryList/CategoryList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DragAndDrop/DragAndDropItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UserList/UserList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UserList/UserList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functions/bodyLock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functions/filterObject.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functions/getObjectKey.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functions/putData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useFetch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json-server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/json-server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/CardCategories/CardCategories.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardCategories/CardCategories.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/CardCategories/CardCategories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardCategories/CardCategories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/CardsContainer/CardsContainer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CardsContainer/CardsContainer.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/CardsContainer/CardsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CardsContainer/CardsContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/CreateTaskButton/CreateTaskButton.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CreateTaskButton/CreateTaskButton.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Input/Input.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/LoginUser/LoginUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/LoginUser/LoginUser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/NavigationLink/NavigationLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/NavigationLink/NavigationLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Search/Search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Search/Search.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Search/Search.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/TaskCard/TaskCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/TaskCard/TaskCard.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/TaskCard/TaskCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/TaskCard/TaskCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/WelcomeUser/WelcomeUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/WelcomeUser/WelcomeUser.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AccountMenu/AccountMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountMenu/AccountMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreateTask/CreateTask.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateTask/CreateTask.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreateTask/CreateTask.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateTask/CreateTask.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TaskPageContent/TaskPageContent.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaskPageContent/TaskPageContent.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TaskPageContent/TaskPageContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaskPageContent/TaskPageContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/isAuth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/isAuth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Notifications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Notifications.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Tasks.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Tasks.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Tasks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Tasks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaskPageContent/categories.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/static-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/static-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/wrapper-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/wrapper-styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +63,9 @@
       <list>
         <option value="tsconfig.json" />
         <option value="HTML File" />
+        <option value="TypeScript JSX File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -72,7 +91,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/web/projects/youtrack/src/icons&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/web/projects/youtrack/src/UI&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -89,18 +108,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\UI" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\functions" />
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\icons" />
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\image" />
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\components\AccountMenu" />
-      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\icons-font" />
-      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\components" />
+      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\types" />
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\components\TaskPageContent" />
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\image" />
       <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\UI\WelcomeUser" />
-      <recent name="C:\Users\Admin\Desktop\web\projects\youtrack\src\styles" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -136,7 +155,36 @@
       <workItem from="1681543019736" duration="20353000" />
       <workItem from="1681627521681" duration="15885000" />
       <workItem from="1681674858149" duration="1725000" />
-      <workItem from="1681715916991" duration="19619000" />
+      <workItem from="1681715916991" duration="19873000" />
+      <workItem from="1681807103734" duration="5000" />
+      <workItem from="1681808883928" duration="1231000" />
+      <workItem from="1683222576768" duration="126000" />
+      <workItem from="1683222707614" duration="1000" />
+      <workItem from="1683222860942" duration="695000" />
+      <workItem from="1683224005123" duration="817000" />
+      <workItem from="1683649242330" duration="5000" />
+      <workItem from="1683654163761" duration="9000" />
+      <workItem from="1683795053856" duration="11000" />
+      <workItem from="1684246446823" duration="12000" />
+      <workItem from="1684588498106" duration="15586000" />
+      <workItem from="1684685559128" duration="11513000" />
+      <workItem from="1684739225647" duration="12078000" />
+      <workItem from="1684763382685" duration="2860000" />
+      <workItem from="1684766345147" duration="2472000" />
+      <workItem from="1684824872000" duration="248000" />
+      <workItem from="1684825426204" duration="3046000" />
+      <workItem from="1684831053097" duration="9187000" />
+      <workItem from="1684908509653" duration="1296000" />
+      <workItem from="1684910987386" duration="17189000" />
+      <workItem from="1684993149581" duration="10871000" />
+      <workItem from="1685045361439" duration="508000" />
+      <workItem from="1685084555473" duration="3194000" />
+      <workItem from="1685090379067" duration="2558000" />
+      <workItem from="1685102691716" duration="886000" />
+      <workItem from="1685114971906" duration="10737000" />
+      <workItem from="1685165483604" duration="18290000" />
+      <workItem from="1685211699470" duration="5071000" />
+      <workItem from="1685258688604" duration="19395000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1680807256007</created>
@@ -159,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681153644963</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some change">
+      <created>1681758052381</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758052381</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

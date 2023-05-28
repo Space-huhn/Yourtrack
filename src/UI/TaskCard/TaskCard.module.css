@@ -6,7 +6,7 @@
     padding: 15px;
     background: #2A2D3A;
     transition: all .3s ease 0s;
-    /*margin-top: 20px;*/
+    margin-bottom: 20px;
 }
 
 .card:hover {

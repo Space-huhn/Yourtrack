@@ -1,95 +1,97 @@
-import React, {useState} from 'react';
+import React, {Dispatch, SetStateAction, useState} from 'react';
 import styles from './CreateTask.module.css'
 import CloseButton from "../../UI/CloseButton/CloceButton";
-import CardCategories from "../CardCategories/CardCategories";
 import Button from "../../UI/Button/Button";
+import {putData} from "../../functions/putData";
+import {ITask, ITodoListColumns} from "../../types/interfaces";
+import TextArea from "../../UI/TextArea/TextArea";
+import CategoryList from "../CategoryList/CategoryList";
+import Select from "../../UI/Select/Select";
+import UserList from "../UserList/UserList";
+import InputModal from "../../UI/InputModal/InputModal";
+import SelectResponsible from "../../UI/SelectResponsible/SelectResponsible";
+import {categoriesList, statusList} from '../../static/static-data'
 
-const CreateTask = ({data, setData, modalVisible, setModalVisible}) => {
-  const cl = [styles.container]
-  if (modalVisible) {
-    cl.push(styles.active)
+interface ICreateTask {
+  data: ITodoListColumns,
+  setData: Dispatch<SetStateAction<ITodoListColumns>>,
+  modalVisible: boolean,
+  setModalVisible: (modalVisible: boolean) => void
+}
+
+const CreateTask:React.FC<ICreateTask> = ({data, setData, modalVisible, setModalVisible}) => {
+  const nextId = new Date().getTime()
+
+  const taskForm: ITask = {
+    id: nextId,
+    title: '',
+    description: '',
+    categories: [],
+    status: '',
+    responsible: []
   }
 
-  const closeModal = () => {
-    setModalVisible(false);
-  }
-
-  const [categories, setCategories] = useState<string[]>([])
-  const [title, setTitle] = useState<string>('')
-  const [description, setDescription] = useState<string>('')
-  const [status, setStatus] = useState<string>('')
-
-  const selectHandler = (e: React.ChangeEvent<HTMLSelectElement>, setState) => {
-    setState(prev => [...prev, e.target.value])
-  }
-
-  const selectStatus = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setStatus(e.target.value)
-  }
+  const [newTask, setNewTask] = useState(JSON.parse(JSON.stringify(taskForm)))
 
   const cancelTask = () => {
-    setCategories([])
-    setTitle('')
-    setDescription('')
-    setStatus('')
+    setNewTask(taskForm)
   }
 
   const createTask = () => {
-    setData(prev => [...prev, {
-      id: data.length+1,
-      title: title,
-      description: description,
-      categories: categories,
-      status: status,
-      responsible: []
-    }])
+    const obj = JSON.parse(JSON.stringify(data[newTask.status].items.push(newTask)))
+
+    setData(prev => ({
+      ...prev,
+      str: {...obj}
+    }));
+
+    putData(`http://localhost:3004/todoListColumns`, data).then();
+
     cancelTask()
   }
 
-  const inputHandler = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, setState) => {
-    setState(e.target.value)
+  const closeModal = () => {
+    cancelTask();
+    setModalVisible(false);
   }
 
   return (
-    <div onClick={closeModal} className={cl.join(' ')}>
+    <div onClick={closeModal}
+         className={`${styles.container} 
+         ${modalVisible ? styles.active : ''}`}
+    >
       <div className={styles.content} onClick={e => e.stopPropagation()}>
-        <CloseButton closeModal={closeModal}/>
-        <label htmlFor="title">title</label>
-        <input id='title' type="text"
-           onChange={e => inputHandler(e, setTitle)}
-           value={title}
-        />
-
-        <label htmlFor="description">description</label>
-        <textarea id='description'
-          onChange={e => inputHandler(e, setDescription)}
-          value={description}
-        />
-
-        <label className={styles.categories} htmlFor="categories">
-          categories:
-        </label>
-        <span><CardCategories array={categories}/></span>
-        <select id='categories'
-                onChange={(e) => selectHandler(e, setCategories)}>
-          <option disabled={true}>Select categories</option>
-          <option value='website'>website</option>
-          <option value='design'>design</option>
-          <option value='frontend'>frontend</option>
-          <option value='management'>management</option>
-          <option value='app'>app</option>
-          <option value='planning'>planning</option>
-        </select>
-
-        <label htmlFor="status">status</label>
-        <select id='status'
-                onChange={selectStatus}>
-          <option disabled={true}>Select status</option>
-          <option value='inProgress'>In Progress</option>
-          <option value='toDo'>To Do</option>
-          <option value='completed'>Completed</option>
-        </select>
-
+        <CloseButton
+          closeModal={closeModal}/>
+        <InputModal
+          value={newTask}
+          setStateFunction={setNewTask}/>
+        <TextArea
+          labelText='description:'
+          value={newTask}
+          setStateFunction={setNewTask}/>
+        <CategoryList
+          newTask={newTask}
+          setNewTask={setNewTask}/>
+        <Select
+          labelText='categories'
+          options={categoriesList}
+          defaultValue='Select categories'
+          state={newTask}
+          setStateFunction={setNewTask}/>
+        <Select
+          labelText='status'
+          options={Object.values(statusList)}
+          state={newTask}
+          setStateFunction={setNewTask}/>
+        <div className={styles.responsible}>
+          <UserList
+            state={newTask}
+            setStateFunction={setNewTask}/>
+          <SelectResponsible
+            state={newTask}
+            setStateFunction={setNewTask}/>
+        </div>
         <div className={styles.bottom}>
           <Button click={cancelTask}>Cancel</Button>
           <Button click={createTask}>Save Task</Button>

@@ -2,11 +2,11 @@ import React, {useContext, useState} from 'react';
 import avatar from "../../image/avatar.gif"
 import styles from './AccountMenu.module.css'
 import {accountMenuItems} from "../../static/static-data";
-import {Auth} from "../../context/isAuth";
+import {Auth, IAuth} from "../../context/isAuth";
 
 const AccountMenu = () => {
   const [isActive, setIsActive] = useState<boolean>(false);
-  const {setIsAuth} = useContext<any>(Auth)
+  const {setIsAuth} = useContext(Auth) as IAuth;
 
   const logOut = () => {
     setIsAuth(false)

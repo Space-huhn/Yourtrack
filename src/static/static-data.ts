@@ -21,7 +21,6 @@ export const menuItems:IMenuItems[] = [
 
 export const accountMenuItems: string[] = ["my profile", "help", "settings", "info"]
 
-
 export const statusTypes: ICardsTypes[] = [
   {
     name: "To Do",
@@ -37,6 +36,9 @@ export const statusTypes: ICardsTypes[] = [
   },
 ]
 
+export const categoriesList = ['website', 'design', 'frontend', 'management', 'app', 'planning'];
+
+export const statusList = { toDo: 'To Do', inProgress: 'In Progress', completed: 'Completed' }
 
 
 
